@@ -1,2 +1,7 @@
 #!/bin/bash
-chmod -R ugo+X
+
+# Add execute permission to all subdirectories of the current directory for the owner, the group owner and all other users.
+
+# Use the find command to locate all directories within the current directory, and then use the chmod command to add execute permission for the owner, group, and others.
+find . -type d -exec chmod 755 {} \;
+
